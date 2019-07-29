@@ -1,0 +1,14 @@
+# A house= Wall + Roof + 2 windows
+# Wall
+to wall [repeat 4 [rt 90 fd 120]] end
+# Roof 
+to roof [left 90 repeat 3 [right 120 fd 120] ] end
+# Windows
+to window [fd 30 bk 20 left 90 fd 15 bk 30 fd 15 right 90 fd 10 left 90 fd 15 bk 30 fd 15] end
+# House
+Wall
+left 90 Roof
+pu bk 45 right 90 fd 20 pd
+window
+pu rt 90 fd 30 
+home
