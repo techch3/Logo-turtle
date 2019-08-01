@@ -1,0 +1,16 @@
+# Draw a pentagon by Techch3
+# Clearn Screen
+cs
+# set the start position.
+bk 300
+#画五条经线
+fd 300  rt 108 repeat 4 [fd 300 bk 300 lt 72] 
+#回到起点
+fd 300 
+#画外围
+rt 126 repeat 5[fd 352.67 rt 72]
+
+to PENTAGON :x  bk :x fd :x  rt 108 repeat 4 [fd :x bk :x lt 72] fd :x rt 126 repeat 5 [fd 1.17*:x rt 72] end
+Y=2Cos 54
+## Option
+Option 1 cs repeat 5 [fd 300 bk 300 lt 72] fd 300 rt 126 repeat 5[fd 352.67 rt 72]
